@@ -5,6 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DelegateAndEvents
+ //Student Name:- Gurkirat Singh Student Id:-C0731779
+//student Name:-Robindeep Singh  Student Id:- C0723381
+// CSD 3354 Section 2
+//Assignment 2
+//March 6-2019
 {
     class Program
     {
