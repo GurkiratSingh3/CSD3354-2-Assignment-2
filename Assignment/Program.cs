@@ -4,16 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment
+namespace DelegateAndEvents
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            DelegateExercises o = new DelegateExercises();
-            o.Method2();
-        }
-    }
+    
     public class DelegateExercises
     {
         //Name : Gurkirat Singh (C0731779)
