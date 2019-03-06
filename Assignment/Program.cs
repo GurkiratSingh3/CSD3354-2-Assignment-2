@@ -22,7 +22,7 @@ namespace Assignment
 
         void Method1()
         {
-            Console.WriteLine("Method");
+            Console.WriteLine("Method1");
             Console.ReadLine();
         }
 
