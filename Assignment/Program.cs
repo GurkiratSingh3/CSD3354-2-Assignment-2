@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DelegateAndEvents
 {
-    
+
     public class DelegateExercises
     {
         //Name : Gurkirat Singh (C0731779)
@@ -23,6 +23,17 @@ namespace DelegateAndEvents
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
             myDelegate();
+        }
+    }
+    namespace DelegatesAndEvents
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                DelegateExercises a = new DelegateExercises();
+                a.Method2();
+            }
         }
     }
 }
