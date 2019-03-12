@@ -16,30 +16,26 @@ namespace DelegateAndEvents
         public static void Main()
         {
            DelegateExercises delegateExercises = new DelegateExercises();
-            try    
-            {
-                delegateExercises.Method3();
-              Console.ReadLine();
-            }
-        catch(System.Exception ex)
-        {
-            System.Console.WriteLine("Exception Occurred.");
-                Console.ReadLine();
-        }
+           delegateExercises.Method3();
+           Console.ReadLine();
         }
     }
-    public delegate void MyDelegate(out int i);
+    public delegate void MyDelegate(ref int intValue);
 
     public class DelegateExercises
         {
-        void Method1()
+        void Method1(ref int intValue)
             {
-              throw new System.Exception();
+              intValue = intValue + 5;
+              System.Console.ReadLine("Method " + intValue);
             }          
         public void Method3()
             {
             MyDelegate myDelegate = new MyDelegate(Method1);
-            myDelegate();
+            MyDelegate myDelegate1 = new MyDelegate(Method1);
+            MyDelegate myDelegate2 = myDelegate + myDelegate1;
+            int intParameter = 5;
+            myDelegate2(ref intParameter);
         }
     }
 }
