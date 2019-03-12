@@ -11,7 +11,6 @@ namespace DelegateAndEvents
 //Assignment 2
 //March 6-2019
 {
-    delegate void ExampleDelegate(string xyz);
     public class Program
     {
         public static void Main()
@@ -27,14 +26,14 @@ namespace DelegateAndEvents
         {
         int Method(out int i)
             {
-            System.Console.WriteLine("Method1");
-            i = 10;
+            i = 100;
             return 0;
+            System.Console.WriteLine("Method1" + i);
         }          
         public void Method3()
             {
             MyDelegate myDelegate = new MyDelegate(Method1);
-            MyDelegate myDelegate1 = new MyDelegate(Method1);
+            MyDelegate myDelegate1 = null;
             MyDelegate myDelegate2 = myDelegate + myDelegate1;
             int intValue;
             myDelegate2(out intValue);
